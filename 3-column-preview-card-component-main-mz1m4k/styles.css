@@ -1,0 +1,253 @@
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+    display: block;
+}
+
+body {
+    line-height: 1;
+}
+
+ol,
+ul {
+    list-style: none;
+}
+
+blockquote,
+q {
+    quotes: none;
+}
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+    content: '';
+    content: none;
+}
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+:root {
+    --c-oragne: hsl(31, 77%, 52%);
+    --c-cyan: hsl(184, 100%, 22%);
+    --c-dcyan: hsl(179, 100%, 13%);
+    --c-text: hsla(0, 0%, 100%, 0.75);
+    --c-background: hsl(0, 0%, 95%);
+    --font1: 'Big Shoulders Display', cursive;
+    --font2: 'Lexend Deca', sans-serif;
+}
+
+body {
+    font-family: var(--font2);
+    background: var(--c-background);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-size: 15px;
+    box-sizing: border-box;
+}
+
+.item-heading {
+    color: var(--c-background);
+    font-family: var(--font1);
+    font-size: 50px;
+    text-transform: uppercase;
+    margin-bottom: 40px;
+    margin-top: 40px;
+
+}
+
+.item-text {
+    letter-spacing: 0.1em;
+    line-height: 1.5em;
+
+}
+
+.car-preview-flex {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-weight: 400;
+    color: var(--c-text);
+    border-radius: 15px;
+    overflow: hidden;
+    margin: 10% 5% 10% 5%;
+
+}
+
+.item {
+    display: flex;
+    justify-content: center;
+    align-items: left;
+    flex-direction: column;
+    padding: 40px;
+}
+
+.item-sedan {
+    background: var(--c-oragne);
+
+}
+
+.item-suv {
+    background: var(--c-cyan);
+
+}
+
+.item-luxury {
+    background: var(--c-dcyan);
+
+}
+
+.item-img {
+    width: 70px;
+}
+
+.link-item {
+    display: inline-block;
+    text-align: center;
+    text-decoration: none;
+    width: 100px;
+    margin-top: 30px;
+    padding: 0.8rem 1rem;
+    border-radius: 3rem;
+    background-color: var(--c-background);
+    border: 2px solid var(--c-background);
+}
+
+.link-sedan {
+    color: var(--c-oragne);
+}
+
+.link-suv {
+    color: var(--c-cyan);
+}
+
+.link-luxury {
+    color: var(--c-dcyan);
+}
+
+.link-item:hover {
+    background-color: transparent;
+    color: var(--c-background);
+}
+
+@media all and (min-width:900px) {
+    .car-preview-flex {
+        flex-direction: row;
+        margin: 10% 10px 10% 10px;
+        width: 900px;
+    }
+}
+
+.attribution {
+    font-size: 11px;
+    text-align: center;
+}
+
+.attribution a {
+    color: hsl(228, 45%, 44%);
+}
